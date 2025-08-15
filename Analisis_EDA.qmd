@@ -47,3 +47,47 @@ kable(tabla_final, format = "html", escape = FALSE) %>%
   scroll_box(width = "100%")
 ```
 
+```{r}
+#| label: tabla-categorica
+#| echo: false
+#| message: false
+#| warning: false
+#| tbl-cap: "Variable categórica: Departamento_ocurrencia"
+
+library(readxl)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+Datos <- read_excel("Datos_2020_113.xls", sheet = "Hoja1")
+
+# Tabla de frecuencias para variable categórica
+tabla_cat <- Datos %>%
+  count(Departamento_ocurrencia) %>%
+  arrange(desc(n)) %>%
+  rename(Departamento = Departamento_ocurrencia, Frecuencia = n)
+
+kable(tabla_cat, format = "html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+
+
+```{r}
+#| label: tabla-numerica
+#| echo: false
+#| message: false
+#| warning: false
+#| tbl-cap: "Variable numérica: EDAD"
+
+tabla_num <- tibble(
+  Variable = "EDAD",
+  Min = min(Datos$EDAD, na.rm = TRUE),
+  Mediana = median(Datos$EDAD, na.rm = TRUE),
+  Max = max(Datos$EDAD, na.rm = TRUE),
+  Promedio = round(mean(Datos$EDAD, na.rm = TRUE), 1)
+)
+
+kable(tabla_num, format = "html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
