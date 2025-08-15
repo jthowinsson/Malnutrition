@@ -1,1 +1,49 @@
 # Analisis EDA
+
+```{r}
+#| label: tabla-columnas
+#| echo: false
+#| message: false
+#| warning: false
+#| tbl-cap: Resumen de la variable categórica y numérica seleccionadas
+
+library(readxl)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+# Cargar datos
+Datos <- read_excel("Datos_2020_113.xls", 
+    sheet = "Hoja1")
+
+# Seleccionar columnas
+categorica <- Datos$Departamento_ocurrencia
+numerica   <- Datos$EDAD
+
+# Tabla categórica con frecuencias
+tabla_cat <- tibble(
+  Variable = "Departamento_ocurrencia",
+  Tipo     = "Categórica",
+  Valores  = paste(unique(categorica), collapse = ", "),
+  Frecuencias = paste(names(sort(table(categorica), decreasing = TRUE)), collapse = ", ")
+)
+
+# Tabla numérica con estadísticos básicos
+tabla_num <- tibble(
+  Variable = "EDAD",
+  Tipo     = "Numérica",
+  Min      = min(numerica, na.rm = TRUE),
+  Mediana  = median(numerica, na.rm = TRUE),
+  Max      = max(numerica, na.rm = TRUE),
+  Promedio = round(mean(numerica, na.rm = TRUE), 1)
+)
+
+# Unir tablas
+tabla_final <- bind_rows(tabla_cat, tabla_num)
+
+# Mostrar tabla estilizada
+kable(tabla_final, format = "html", escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+  scroll_box(width = "100%")
+```
+

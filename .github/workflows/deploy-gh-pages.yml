@@ -6,7 +6,7 @@ on:
   push:
     branches: [ master ]
 
-# Permisos para que la acción pueda escribir en tu repositorio y publicar la página
+# Permisos necesarios
 permissions:
   contents: write
   pages: write
@@ -15,7 +15,7 @@ permissions:
 # Define el trabajo a realizar
 jobs:
   publish:
-    runs-on: ubuntu-latest # Usa un servidor de Linux para construir la página
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -26,19 +26,25 @@ jobs:
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: '4.2.2' # Puedes usar una versión específica de R
+          r-version: '4.2.2'
 
-      # --- INSTALA TINYTEX PARA PODER CREAR PDFs ---
       - name: Install TinyTeX
         uses: r-lib/actions/setup-tinytex@v2
-      # ----------------------------------------------
 
-      # --- INSTALA LOS PAQUETES DE R NECESARIOS ---
+      # --- ¡AQUÍ ESTÁ LA MAGIA DEL CACHING! ---
+      - name: Cache R packages
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-r-${{ matrix.r-version }}-${{ hashFiles('**/lockfile') }}
+          restore-keys: |
+            ${{ runner.os }}-r-${{ matrix.r-version }}-
+      # ----------------------------------------
+
       - name: Install R Packages
         run: |
           install.packages(c("readxl", "tidyverse", "knitr"))
         shell: Rscript {0}
-      # ---------------------------------------------
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
