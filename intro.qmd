@@ -2,7 +2,6 @@
 
 ![Este es el pie de foto de mi imagen](imgen1.jpg){width="70%"}
 
-
 La desnutrición infantil es una enfermedad que aparece como resultado del consumo insuficiente de alimentos en cantidad y calidad suficiente, de la aparición repetitiva de enfermedades infecciosas y de factores sociales que afectan el estado nutricional de la niñez.\
  \
 Esta situación afecta principalmente a niñas y niños en sus primeros años de vida y genera graves consecuencias en su desarrollo físico y cognitivo dependiendo de su nivel de gravedad. Incluso, puede llegar a provocar la muerte si no recibe atención adecuada y oportuna.\
@@ -10,9 +9,6 @@ Esta situación afecta principalmente a niñas y niños en sus primeros años de
 De hecho, según el Fondo de las Naciones Unidas para la Infancia (Unicef), una niña o niño que sufre desnutrición aguda grave tiene hasta 9 veces más de posibilidades de morir que aquel cuyo estado nutricional es normal.\
  \
 Por eso, es indispensable que en los hogares los padres, madres y cuidadores, no solo conozcan las principales causas y los tipos de la desnutrición infantil que se pueden presentar, sino que, también, aprendan a identificar las señales de alerta que pueden advertir de un posible cuadro de desnutrición, de modo que consulten oportunamente al médico.
-
-
-
 
 ```{r}
 #| label: Cargar-Datos-Final
