@@ -28,12 +28,17 @@ jobs:
         with:
           r-version: '4.2.2' # Puedes usar una versión específica de R
 
-      # --- ¡AQUÍ ESTÁ LA LÍNEA CLAVE QUE AÑADIMOS! ---
+      # --- INSTALA TINYTEX PARA PODER CREAR PDFs ---
+      - name: Install TinyTeX
+        uses: r-lib/actions/setup-tinytex@v2
+      # ----------------------------------------------
+
+      # --- INSTALA LOS PAQUETES DE R NECESARIOS ---
       - name: Install R Packages
         run: |
           install.packages(c("readxl", "tidyverse", "knitr"))
         shell: Rscript {0}
-      # --------------------------------------------------
+      # ---------------------------------------------
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
