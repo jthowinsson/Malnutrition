@@ -1,6 +1,6 @@
 # Introduction
 
-![Este es el pie de foto. Describe la imagen.](ruta/a/tu/imagen.png){#fig-nombre descriptivo width="70%"}
+![Este es el pie de foto de mi imagen](imgen1.jpg){width="70%"}
 
 
 La desnutrición infantil es una enfermedad que aparece como resultado del consumo insuficiente de alimentos en cantidad y calidad suficiente, de la aparición repetitiva de enfermedades infecciosas y de factores sociales que afectan el estado nutricional de la niñez.\
