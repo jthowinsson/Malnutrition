@@ -1,49 +1,43 @@
-name: Autodeploy to GitHub Pages
+# Nombre del flujo de trabajo
+name: Deploy Quarto Website to GitHub Pages
 
+# Se ejecuta cada vez que haces 'git push' a la rama 'master'
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
 
-permissions: # <--- ¡¡¡AÑADE ESTA SECCIÓN AQUÍ!!!
-  contents: write # Permite al bot escribir en el repositorio
-  pages: write    # Permite al bot gestionar despliegues de GitHub Pages
-  id-token: write # Necesario si GitHub Pages usa autenticación OIDC, buena práctica incluirlo.
+# Permisos para que la acción pueda escribir en tu repositorio y publicar la página
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
+# Define el trabajo a realizar
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
+  publish:
+    runs-on: ubuntu-latest # Usa un servidor de Linux para construir la página
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
+      - name: Check out repository
+        uses: actions/checkout@v3
 
-    - name: Set up Git
-      run: |
-        git config --global user.name 'GitHub Actions'
-        git config --global user.email 'actions@github.com'
-        # Esta línea puede ser simplificada si se usa el método de acciones/checkout con token
-        # o si los permisos son correctos. Pero la mantendremos por ahora si está funcionando.
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
-    - name: Delete gh-pages branch from remote
-      run: |
-        # Añadir '&& true' o '|| true' para que el workflow no falle si la rama no existe
-        git push origin --delete gh-pages || true
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.2.2' # Puedes usar una versión específica de R
 
-    - name: Create new gh-pages branch
-      run: |
-        git checkout --orphan gh-pages
+      # --- ¡AQUÍ ESTÁ LA LÍNEA CLAVE QUE AÑADIMOS! ---
+      - name: Install R Packages
+        run: |
+          install.packages(c("readxl", "tidyverse", "knitr"))
+        shell: Rscript {0}
+      # --------------------------------------------------
 
-    - name: Add all files to gh-pages
-      run: |
-        git add --all
-        git commit -m "Deploy to gh-pages"
-
-    - name: Push to gh-pages branch
-      run: |
-        git push origin gh-pages --force
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
