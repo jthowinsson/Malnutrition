@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Malnutrition",
+    "section": "",
+    "text": "Preface",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "Este es el pie de foto de mi imagen\n\n\nLa desnutrición infantil es una enfermedad que aparece como resultado del consumo insuficiente de alimentos en cantidad y calidad suficiente, de la aparición repetitiva de enfermedades infecciosas y de factores sociales que afectan el estado nutricional de la niñez.\n \nEsta situación afecta principalmente a niñas y niños en sus primeros años de vida y genera graves consecuencias en su desarrollo físico y cognitivo dependiendo de su nivel de gravedad. Incluso, puede llegar a provocar la muerte si no recibe atención adecuada y oportuna.\n \nDe hecho, según el Fondo de las Naciones Unidas para la Infancia (Unicef), una niña o niño que sufre desnutrición aguda grave tiene hasta 9 veces más de posibilidades de morir que aquel cuyo estado nutricional es normal.\n \nPor eso, es indispensable que en los hogares los padres, madres y cuidadores, no solo conozcan las principales causas y los tipos de la desnutrición infantil que se pueden presentar, sino que, también, aprendan a identificar las señales de alerta que pueden advertir de un posible cuadro de desnutrición, de modo que consulten oportunamente al médico.\n\n\n\n¡Datos de Excel cargados exitosamente!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPartición\nCONSECUTIVE\nCOD_EVE\nFEC_NOT\nSEMANA\nANO\nCOD_PRE\nCOD_SUB\nEDAD\nUNI_MED\nnacionalidad\nnombre_nacionalidad\nSEXO\nCOD_PAIS_O\nCOD_DPTO_O\nCOD_MUN_O\nAREA\nOCUPACION\nTIP_SS\nCOD_ASE\nPER_ETN\nGRU_POB\nnom_grupo\nestrato\nGP_DISCAPA\nGP_DESPLAZ\nGP_MIGRANT\nGP_CARCELA\nGP_GESTAN\nsem_ges\nGP_INDIGEN\nGP_POBICFB\nGP_MAD_COM\nGP_DESMOVI\nGP_PSIQUIA\nGP_VIC_VIO\nGP_OTROS\nfuente\nCOD_PAIS_R\nCOD_DPTO_R\nCOD_MUN_R\nCOD_DPTO_N\nCOD_MUN_N\nFEC_CON\nINI_SIN\nTIP_CAS\nPAC_HOS\nFEC_HOS\nCON_FIN\nFEC_DEF\nAJUSTE\nFECHA_NTO\nCER_DEF\nCBMTE\nFEC_ARC_XL\nFEC_AJU\nFM_FUERZA\nFM_UNIDAD\nFM_GRADO\nconfirmados\nconsecutive_origen\nva_sispro\nEstado_final_de_caso\nnom_est_f_caso\nNom_upgd\nPais_ocurrencia\nNombre_evento\nDepartamento_ocurrencia\nMunicipio_ocurrencia\nPais_residencia\nDepartamento_residencia\nMunicipio_residencia\nDepartamento_Notificacion\nMunicipio_notificacion\n\n\n\n\nDatos_2020_113\n7317953\n113\n2020-09-15\n38\n2020\n4484700836\n01\n23\n3\n170\nCOLOMBIA\nM\n170\n44\n847\n3\n9999\nS\nEPSI04\n1\nNA\nWAYUU\n1\n2\n2\n2\n2\n2\nNA\n2\n2\n2\n2\n2\n2\n1\n1\n170\n44\n847\n44\n44847\n2020-09-15\n2020-09-15\n4\n1\n2020-09-15\n1\nNA\n0\n2020-08-29\nNA\nNA\n2021-04-30\n2020-09-21\nNA\nNA\nNA\n1\n7530\n1\n4\nConfirmado por Clínica\nUNIDAD MATERNO INFANTIL TALAPUIN SAS\nCOLOMBIA\nDESNUTRICIÓN AGUDA EN MENORES DE 5 AÑOS\nGUAJIRA\nURIBIA\nCOLOMBIA\nGUAJIRA\nURIBIA\nGUAJIRA\nURIBIA\n\n\nDatos_2020_113\n7317954\n113\n2020-11-07\n45\n2020\n4135900424\n01\n1\n1\n170\nCOLOMBIA\nM\n170\n41\n359\n3\n9999\nS\nEPSS45\n6\nNA\nNA\n1\n2\n2\n2\n2\n2\nNA\n2\n2\n2\n2\n2\n2\n1\n1\n170\n41\n359\n41\n41359\n2020-11-07\n2020-11-07\n4\n2\nNA\n1\nNA\n0\n2019-10-24\nNA\nNA\n2021-04-30\n2020-11-10\nNA\nNA\nNA\n1\n7531\n1\n4\nConfirmado por Clínica\nESE HOSPITAL SAN JOSE DE ISNOS\nCOLOMBIA\nDESNUTRICIÓN AGUDA EN MENORES DE 5 AÑOS\nHUILA\nISNOS (SAN JOSE DE ISNOS)\nCOLOMBIA\nHUILA\nISNOS (SAN JOSE DE ISNOS)\nHUILA\nISNOS (SAN JOSE DE ISNOS)\n\n\nDatos_2020_113\n7317955\n113\n2020-11-28\n48\n2020\n4456000954\n01\n1\n1\n170\nCOLOMBIA\nM\n170\n44\n560\n3\n9999\nS\nCCF023\n1\nNA\nWAYUU\n1\n2\n2\n2\n2\n2\nNA\n2\n2\n2\n2\n2\n2\n1\n2\n170\n44\n560\n44\n44560\n2020-11-24\n2020-11-24\n4\n2\nNA\n1\nNA\n0\n2019-05-04\nNA\nNA\n2021-04-30\n2020-11-28\nNA\nNA\nNA\n1\n7532\n1\n4\nConfirmado por Clínica\nKOTTUSHI SAO ANAA\nCOLOMBIA\nDESNUTRICIÓN AGUDA EN MENORES DE 5 AÑOS\nGUAJIRA\nMANAURE\nCOLOMBIA\nGUAJIRA\nMANAURE\nGUAJIRA\nMANAURE\n\n\nDatos_2020_113\n7317956\n113\n2020-09-19\n38\n2020\n7070800117\n01\n2\n2\n170\nCOLOMBIA\nM\n170\n70\n708\n2\n9999\nN\nNA\n6\nNA\nNA\n1\n2\n2\n2\n2\n2\nNA\n2\n2\n2\n2\n2\n2\n1\n1\n170\n70\n708\n70\n70708\n2020-09-19\nNA\n4\n2\nNA\n1\nNA\n7\n2020-06-29\nNA\nNA\n2021-04-30\n2020-09-24\nNA\nNA\nNA\n1\n7533\n1\n4\nConfirmado por Clínica\nESE CENTRO DE SALUD SAN JOSE I NIVEL SAN MARCOS\nCOLOMBIA\nDESNUTRICIÓN AGUDA EN MENORES DE 5 AÑOS\nSUCRE\nSAN MARCOS\nCOLOMBIA\nSUCRE\nSAN MARCOS\nSUCRE\nSAN MARCOS\n\n\nDatos_2020_113\n7317957\n113\n2020-09-17\n38\n2020\n4700100650\n01\n2\n2\n170\nCOLOMBIA\nM\n170\n47\n001\n1\n9999\nS\nEPSS41\n6\nNA\nNA\n1\n2\n2\n2\n2\n2\nNA\n2\n2\n2\n2\n2\n2\n1\n1\n170\n47\n001\n47\n47001\n2020-09-17\n2020-09-13\n4\n1\n2020-09-17\n1\nNA\n0\n2020-07-24\nNA\nNA\n2021-04-30\n2020-09-25\nNA\nNA\nNA\n1\n7534\n1\n4\nConfirmado por Clínica\nHOSPITAL UNIVERSITARIO FERNANDO TROCONIS\nCOLOMBIA\nDESNUTRICIÓN AGUDA EN MENORES DE 5 AÑOS\nMAGDALENA\nSANTA MARTHA\nCOLOMBIA\nMAGDALENA\nSANTA MARTHA\nMAGDALENA\nSANTA MARTHA\n\n\nDatos_2020_113\n7278667\n113\n2020-09-02\n36\n2020\n1100130296\n03\n3\n2\n170\nCOLOMBIA\nF\n170\n11\n001\n1\n9999\nS\nEPSS34\n6\nNA\nNA\n2\n2\n2\n2\n2\n2\nNA\n2\n2\n2\n2\n2\n2\n1\n1\n170\n11\n001\n11\n11001\n2020-09-01\n2020-09-01\n4\n1\n2020-09-01\n1\nNA\n0\n2020-05-31\nNA\nNA\n2021-04-30\n2020-09-02\nNA\nNA\nNA\n1\n10740\n1\n4\nConfirmado por Clínica\nUNIDAD DE SERVICIOS DE SALUD PATIO BONITO TINTAL\nCOLOMBIA\nDESNUTRICIÓN AGUDA EN MENORES DE 5 AÑOS\nBOGOTA\nBOGOTA\nCOLOMBIA\nBOGOTA\nBOGOTA\nBOGOTA\nBOGOTA",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n\nCode\n1 + 1\n\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  }
+]
